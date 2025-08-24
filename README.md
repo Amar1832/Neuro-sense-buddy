@@ -1,74 +1,38 @@
 🤖 Neuro Sense Buddy 2024
 
-An emotion-aware chatbot that integrates DeepFace for facial emotion recognition and Groq API for adaptive LLM responses. Built with FastAPI, OpenCV, and prompt engineering, it processes real-time inputs and tailors responses dynamically based on detected emotions, making interactions more human-like and empathetic.
+Neuro Sense Buddy is a real-time emotion-aware chatbot that works with your webcam. It detects your emotions live using DeepFace, then adapts its replies with the Groq API and prompt engineering — making it feel less like a program and more like a supportive friend.
 
 ✨ Features
 
-🎭 Facial Emotion Recognition using DeepFace on images or video frames
+🎥 Webcam-based live detection (not just video analysis)
 
-🧠 Adaptive Chatbot Responses with Groq API powered by Llama models
+🎭 Facial emotion recognition in real time with DeepFace
 
-⚡ Real-time Processing with asynchronous FastAPI backend
+🧠 Adaptive chatbot replies using Groq API (LLM responses)
 
-🧩 Prompt Engineering Layer to adjust tone/style based on detected emotions
+🧩 Prompt engineering to tune tone & style to your mood
 
-🎥 OpenCV Integration for handling image & video input
-
-🛠️ Configurable via .env for API keys and runtime settings
+⚡ FastAPI backend with lightweight endpoints
 
 📂 Project Structure
-
 Neuro-sense-buddy-2024/
-├─ app/              # FastAPI backend (routers, services, utils)
-├─ examples/         # Demo client & sample prompts
-├─ tests/            # Basic test cases
-├─ requirements.txt  # Dependencies
-└─ README.md         # Project documentation
-
+│
+├── app/              
+│
+├── examples/         
+│
+├── tests/            
+│
+├── requirements.txt  
+│
+└── README.md         
 
 ⚡ Quickstart
-1. Clone & Setup
-git clone https://github.com/Amar1832/Neuro-sense-buddy.git
-cd Neuro-sense-buddy
+git clone https://github.com/your-username/neuro-sense-buddy-2024.git
+cd neuro-sense-buddy-2024
 cp .env.example .env
-
-2. Add your keys
-
-Edit .env and add:
-
-GROQ_API_KEY=your_api_key_here
-
-3. Install & Run
-./run.sh
-
-
-Server will run at: http://localhost:8000
-
-Docs available at: http://localhost:8000/docs
-
-🚀 Example Usage
-
-Health Check
-
-curl http://localhost:8000/health
-
-
-Analyze Emotion (image upload)
-
-curl -F "image=@face.jpg" http://localhost:8000/v1/emotion/analyze
-
-
-Chat with Text
-
-curl -X POST http://localhost:8000/v1/chat \
-     -H "Content-Type: application/json" \
-     -d '{"message":"Hello, I feel nervous"}'
-
-
-Chat with Image + Text
-
-curl -F "image=@face.jpg" -F "message=hi" \
-     http://localhost:8000/v1/chat-with-image
+pip install -r requirements.txt
+uvicorn app.main:app --reload
 
 🛠️ Tech Stack
 
@@ -76,9 +40,9 @@ Python
 
 FastAPI
 
-DeepFace (emotion recognition)
+DeepFace
 
-Groq API (LLM responses)
+Groq API
 
 OpenCV
 
@@ -86,7 +50,6 @@ Prompt Engineering
 
 📜 License
 
-This project is licensed under the MIT License – see the LICENSE
- file for details.
+Licensed under the MIT License – see the LICENSE file for details.
 
-⚡ Neuro Sense Buddy — an AI that not only talks, but listens to your emotions.
+👉 This way it’s clear it’s not “video analytics,” but a live detection buddy that feels interactive and personal.
