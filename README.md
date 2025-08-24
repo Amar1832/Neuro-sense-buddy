@@ -17,16 +17,12 @@ Neuro Sense Buddy is a real-time emotion-aware chatbot that works with your webc
 📂 Project Structure
 Neuro-sense-buddy-2024/
 
-│
-├── app/              
-│
-├── examples/         
-│
-├── tests/            
-│
-├── requirements.txt  
-│
-└── README.md         
+│── emotion/  
+│── llm/  
+│── prompt/  
+│── requirements.txt  
+│── main.py  
+        
 
 ⚡ Quickstart
 git clone https://github.com/your-username/neuro-sense-buddy-2024.git
