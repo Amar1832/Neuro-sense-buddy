@@ -16,6 +16,7 @@ Neuro Sense Buddy is a real-time emotion-aware chatbot that works with your webc
 
 📂 Project Structure
 Neuro-sense-buddy-2024/
+
 │
 ├── app/              
 │
