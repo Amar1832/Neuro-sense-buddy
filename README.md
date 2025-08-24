@@ -17,20 +17,14 @@ An emotion-aware chatbot that integrates DeepFace for facial emotion recognition
 🛠️ Configurable via .env for API keys and runtime settings
 
 📂 Project Structure
+
 Neuro-sense-buddy-2024/
-├─ app/
-│  ├─ main.py              # FastAPI entrypoint
-│  ├─ routers/             # API routes (health, chat, emotion)
-│  ├─ services/            # DeepFace, Groq, prompt logic
-│  ├─ utils/               # Helpers (logging, image loading)
-│  ├─ config.py            # Environment settings
-│  └─ schemas.py           # Pydantic models
-├─ examples/               # Demo client & sample prompts
-├─ tests/                  # Basic test cases
-├─ .env.example            # Env template
-├─ requirements.txt        # Dependencies
-├─ run.sh                  # Startup script
-└─ README.md               # This file
+├─ app/              # FastAPI backend (routers, services, utils)
+├─ examples/         # Demo client & sample prompts
+├─ tests/            # Basic test cases
+├─ requirements.txt  # Dependencies
+└─ README.md         # Project documentation
+
 
 ⚡ Quickstart
 1. Clone & Setup
