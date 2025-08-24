@@ -45,6 +45,13 @@ OpenCV
 
 Prompt Engineering
 
+## 🌐 Live Demo
+
+Check out the live preview here:  
+👉 [NeuroSense Buddy Live](https://preview--neuro-sense-buddy-chat.lovable.app/)
+
+
+
 📜 License
 
 Licensed under the MIT License – see the LICENSE file for details.
